@@ -11,7 +11,7 @@ Create React Server Components with async/await for data fetching, proper use of
 - Avoiding common server/client component mixing errors
 
 ## Prerequisites
-- Next.js 16+ with App Router configured
+- Next.js 15+ with App Router configured
 - TypeScript enabled
 - API endpoints or data sources available
 - Understanding of React Server Components vs Client Components

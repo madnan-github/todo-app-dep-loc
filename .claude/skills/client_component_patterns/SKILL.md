@@ -12,7 +12,7 @@ Create Client Components with 'use client' directive for interactivity, implemen
 - Implementing animations and transitions
 
 ## Prerequisites
-- Next.js 16+ with App Router configured
+- Next.js 15+ with App Router configured
 - TypeScript enabled
 - Understanding of React hooks
 - Understanding of Server vs Client Components

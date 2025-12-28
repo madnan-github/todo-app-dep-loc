@@ -11,7 +11,7 @@ Create centralized API client class with private request method using generics, 
 - Configuring API endpoints with environment variables
 
 ## Prerequisites
-- Next.js 16+ with App Router configured
+- Next.js 15+ with App Router configured
 - TypeScript enabled
 - Better Auth configured (or authentication system in place)
 - Backend API endpoints available

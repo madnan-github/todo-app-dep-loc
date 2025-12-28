@@ -11,7 +11,7 @@ Configure Better Auth with Neon PostgreSQL database, enable email/password authe
 - Managing user sessions
 
 ## Prerequisites
-- Next.js 16+ with App Router configured
+- Next.js 15+ with App Router configured
 - Neon PostgreSQL database created
 - Better Auth package installed
 - Environment variables configured

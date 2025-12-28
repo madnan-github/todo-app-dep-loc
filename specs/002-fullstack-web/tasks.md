@@ -24,7 +24,7 @@
 **Purpose**: Initialize monorepo structure and install dependencies
 
 - [ ] T001 Create monorepo directory structure (frontend/, backend/, .specify/, specs/)
-- [ ] T002 [P] Initialize Next.js 16+ project with TypeScript in /home/ruser/q4/todo-app-web/frontend/
+- [ ] T002 [P] Initialize Next.js 15+ project with TypeScript in /home/ruser/q4/todo-app-web/frontend/
 - [ ] T003 [P] Initialize FastAPI project with UV in /home/ruser/q4/todo-app-web/backend/
 - [ ] T004 [P] Configure Tailwind CSS in /home/ruser/q4/todo-app-web/frontend/tailwind.config.ts
 - [ ] T005 [P] Setup TypeScript config in /home/ruser/q4/todo-app-web/frontend/tsconfig.json

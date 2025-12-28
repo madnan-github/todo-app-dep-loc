@@ -143,7 +143,7 @@ Implement only what is specified—no premature optimization or feature creep.
 
 | Layer | Technology | Justification | Free Tier |
 |-------|------------|---------------|-----------|
-| Frontend | Next.js 16+ (App Router) | Modern React with Server Components | Vercel (100GB bandwidth) |
+| Frontend | Next.js 15+ (App Router) | Modern React with Server Components | Vercel (100GB bandwidth) |
 | Backend | FastAPI | High-performance async Python API | Render/Railway free tier |
 | ORM | SQLModel | SQLAlchemy + Pydantic integration | N/A |
 | Database | Neon PostgreSQL | Serverless Postgres | 0.5GB, 190 compute hrs/mo |

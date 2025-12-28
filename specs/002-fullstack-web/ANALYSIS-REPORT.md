@@ -451,7 +451,7 @@ Edit quickstart.md section 3.4 title:
 
 | Technology | spec.md | plan.md | research.md | tasks.md | Status |
 |------------|---------|---------|-------------|----------|--------|
-| Next.js 16+ | ✅ (line 367) | ✅ (line 23) | ✅ (Decision 1) | ✅ (T002) | ✅ Consistent |
+| Next.js 15+ | ✅ (line 367) | ✅ (line 23) | ✅ (Decision 1) | ✅ (T002) | ✅ Consistent |
 | FastAPI | ✅ (line 368) | ✅ (line 29) | ✅ (Decision 3) | ✅ (T003) | ✅ Consistent |
 | Better Auth | ✅ (line 371) | ✅ (line 150) | ✅ (Decision 2) | ✅ (T027, T040) | ✅ Consistent |
 | Neon PostgreSQL | ✅ (line 369) | ✅ (line 149) | ✅ (Decision 5) | ✅ (T015) | ✅ Consistent |

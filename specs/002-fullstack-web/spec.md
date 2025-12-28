@@ -364,7 +364,7 @@ As a user, I want my tasks to be private and only visible to me so that I can tr
 *These notes are for context only and are not requirements for the specification phase. Implementation details will be defined during the planning phase.*
 
 - Monorepo structure recommended: `frontend/` and `backend/` directories
-- Frontend framework: Next.js 16+ with App Router (not Pages Router)
+- Frontend framework: Next.js 15+ with App Router (not Pages Router)
 - Backend framework: FastAPI with async/await
 - Database: Neon Serverless PostgreSQL
 - ORM: SQLModel for Python backend

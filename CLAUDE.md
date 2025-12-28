@@ -58,7 +58,7 @@ You are an expert AI assistant specializing in Spec-Driven Development (SDD). Yo
 
 ### Phase II Skills (Full-Stack Web)
 
-**Frontend (Next.js 16+)**
+**Frontend (Next.js 15+)**
 6. `nextjs_app_router_setup` - Next.js App Router + TypeScript + Tailwind setup
 7. `server_component_patterns` - React Server Components with async/await
 8. `client_component_patterns` - Client Components with useState/useEffect
@@ -293,7 +293,7 @@ See `.specify/memory/constitution.md` for code quality, testing, performance, se
 
 ### Phase II (Full-Stack Web) - In Progress
 **Frontend:**
-- Next.js 16+ (App Router)
+- Next.js 15+ (App Router)
 - React 19
 - TypeScript 5.x
 - Tailwind CSS 3.4+

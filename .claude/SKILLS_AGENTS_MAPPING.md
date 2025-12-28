@@ -31,7 +31,7 @@ This document maps the available skills and agents to the hackathon project phas
 
 ### Frontend Skills (6)
 1. `nextjs_app_router_setup` - **Initial Setup**
-   - Next.js 16+ with App Router
+   - Next.js 15+ with App Router
    - TypeScript strict mode
    - Tailwind CSS configuration
    - Directory structure (app/, components/, lib/)
@@ -152,7 +152,7 @@ This document maps the available skills and agents to the hackathon project phas
 ### ✅ Technology Stack (Complete)
 | Layer | Technology | Setup Skill |
 |-------|------------|-------------|
-| Frontend | Next.js 16+ | `nextjs_app_router_setup` |
+| Frontend | Next.js 15+ | `nextjs_app_router_setup` |
 | Backend | FastAPI | `fastapi_project_setup` |
 | ORM | SQLModel | `sqlmodel_schema_design` |
 | Database | Neon PostgreSQL | `database_connection_setup` |

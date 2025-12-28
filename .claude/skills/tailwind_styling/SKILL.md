@@ -11,7 +11,7 @@ Apply Tailwind CSS utility classes for responsive design using sm:, md:, lg: bre
 - Avoiding custom CSS in favor of utility-first approach
 
 ## Prerequisites
-- Next.js 16+ with Tailwind CSS configured
+- Next.js 15+ with Tailwind CSS configured
 - `tailwind.config.ts` properly set up
 - `globals.css` with Tailwind directives
 - TypeScript enabled

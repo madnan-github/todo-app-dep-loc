@@ -1,10 +1,10 @@
 # Next.js App Router Setup Skill
 
 ## Description
-Set up Next.js 16+ project with App Router, configure TypeScript strict mode, install and configure Tailwind CSS, create app/ directory structure with layouts and pages, and set up component directories.
+Set up Next.js 15+ project with App Router, configure TypeScript strict mode, install and configure Tailwind CSS, create app/ directory structure with layouts and pages, and set up component directories.
 
 ## When to Use
-- Setting up a new Next.js 16+ project from scratch
+- Setting up a new Next.js 15+ project from scratch
 - Initializing the frontend portion of a monorepo
 - Configuring Next.js with TypeScript strict mode
 - Setting up Tailwind CSS with proper configuration
@@ -362,7 +362,7 @@ Visit `http://localhost:3000` to verify the setup.
 
 ## Success Criteria
 
-- ✅ Next.js 16+ with App Router initialized
+- ✅ Next.js 15+ with App Router initialized
 - ✅ TypeScript strict mode enabled and passing
 - ✅ Tailwind CSS configured and working
 - ✅ Route groups created: (auth) and (dashboard)

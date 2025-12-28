@@ -8,7 +8,7 @@
 ## Summary
 
 Transform the Phase I console todo application into a modern, production-ready web application with:
-- **Frontend**: Next.js 16+ with App Router, TypeScript, Tailwind CSS, React Server Components
+- **Frontend**: Next.js 15+ with App Router, TypeScript, Tailwind CSS, React Server Components
 - **Backend**: FastAPI (Python) with async/await, SQLModel ORM, JWT authentication
 - **Database**: Neon PostgreSQL (serverless) with proper indexes for filtering/sorting
 - **Authentication**: Better Auth with JWT tokens, 7-day sessions, user isolation
@@ -20,7 +20,7 @@ The monorepo structure keeps frontend and backend in a single repository for sim
 ## Technical Context
 
 **Frontend**:
-- **Language/Version**: TypeScript 5.x with Next.js 16+ (App Router)
+- **Language/Version**: TypeScript 5.x with Next.js 15+ (App Router)
 - **Primary Dependencies**: Next.js, React 19, Tailwind CSS, Better Auth
 - **Testing**: Jest + React Testing Library for components, Playwright for E2E
 - **Target Platform**: Modern browsers (Chrome, Firefox, Safari, Edge - last 2 years)
@@ -112,7 +112,7 @@ todo-app-web/
 ├── README.md            # Project documentation
 ├── docker-compose.yml   # Local development setup
 │
-├── frontend/            # Next.js 16+ application
+├── frontend/            # Next.js 15+ application
 │   ├── app/             # App Router pages
 │   │   ├── layout.tsx
 │   │   ├── page.tsx     # Landing page
