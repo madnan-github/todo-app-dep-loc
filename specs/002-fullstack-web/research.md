@@ -6,10 +6,10 @@
 
 ---
 
-## 1. Frontend Framework: Next.js 15+ with App Router
+## 1. Frontend Framework: Next.js 16+ with App Router
 
 ### Decision
-Use Next.js 15+ with **App Router** (not Pages Router) for the frontend framework.
+Use Next.js 16+ with **App Router** (not Pages Router) for the frontend framework.
 
 ### Rationale
 - **React Server Components (RSC)**: Enables data fetching on server, reducing client bundle size
@@ -625,7 +625,7 @@ CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 | Area | Technology | Key Reason |
 |------|-----------|-----------|
-| **Frontend Framework** | Next.js 15+ App Router | React Server Components, best DX, Vercel integration |
+| **Frontend Framework** | Next.js 16+ App Router | React Server Components, best DX, Vercel integration |
 | **Authentication** | Better Auth + JWT | Self-hosted, JWT support, TypeScript-first |
 | **Backend API** | FastAPI (async) | High performance, type safety, auto documentation |
 | **ORM** | SQLModel | Pydantic integration, type safety, less boilerplate |

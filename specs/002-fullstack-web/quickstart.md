@@ -212,7 +212,7 @@ npm run dev
 
 **Expected output:**
 ```
-   ▲ Next.js 15.0.0
+   ▲ Next.js 16.0.0
    - Local:        http://localhost:3000
    - Network:      http://192.168.1.x:3000
 

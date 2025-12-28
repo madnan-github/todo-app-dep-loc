@@ -37,7 +37,7 @@ Context: User completed Phase I (console app with 179 passing tests) and created
 
 The specification defines:
 - Transformation of Phase I console app to multi-user web application
-- Frontend: Next.js 15+ with App Router, TypeScript, Tailwind CSS, Better Auth
+- Frontend: Next.js 16+ with App Router, TypeScript, Tailwind CSS, Better Auth
 - Backend: FastAPI with async/await, SQLModel ORM, JWT verification
 - Database: Neon PostgreSQL with proper indexes
 - Features: All Basic Level (CRUD) + Intermediate Level (priorities, tags, search, filter, sort)
@@ -49,7 +49,7 @@ The specification defines:
 Created complete implementation plan with Phase 0 (Research) and Phase 1 (Design) artifacts:
 
 **Phase 0: Research & Technical Decisions** (`research.md`):
-1. Frontend Framework: Next.js 15+ App Router (React Server Components, streaming, TypeScript)
+1. Frontend Framework: Next.js 16+ App Router (React Server Components, streaming, TypeScript)
 2. Authentication: Better Auth + JWT (self-hosted, 7-day sessions, stateless)
 3. Backend API: FastAPI async (high performance, type safety, auto docs)
 4. ORM: SQLModel (Pydantic integration, type safety, less boilerplate)
@@ -107,7 +107,7 @@ Each decision includes:
 - Estimated setup time: 30-45 minutes
 
 **Technical Context** (in `plan.md`):
-- Frontend: TypeScript 5.x + Next.js 15+ (App Router)
+- Frontend: TypeScript 5.x + Next.js 16+ (App Router)
 - Backend: Python 3.13+ + FastAPI
 - Performance goals: <200ms API, <2s UI load, <1s filter/search
 - Scale targets: 50 users, 10k total tasks, 500 tasks per user
