@@ -16,24 +16,35 @@ from src.middleware import rate_limiter
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan events."""
+    import sys
+
     # Startup: Initialize database tables
-    print(f"Starting TaskFlow API in {settings.environment} mode")
-    print(f"Database URL: {settings.database_url[:50]}...")
-    print(f"CORS Origins: {settings.cors_origins}")
+    print(f"Starting TaskFlow API in {settings.environment} mode", flush=True)
+    sys.stdout.flush()
+    print(f"Database URL: {settings.database_url[:50]}...", flush=True)
+    sys.stdout.flush()
+    print(f"CORS Origins: {settings.cors_origins}", flush=True)
+    sys.stdout.flush()
 
     try:
+        print("Initializing database...", flush=True)
+        sys.stdout.flush()
         await init_db()
-        print("✓ Database initialized successfully")
+        print("✓ Database initialized successfully", flush=True)
+        sys.stdout.flush()
     except Exception as e:
-        print(f"✗ Warning: Database initialization failed: {e}")
-        print("Server will start but database operations may fail")
+        print(f"✗ Warning: Database initialization failed: {e}", flush=True)
+        sys.stdout.flush()
+        print("Server will start but database operations may fail", flush=True)
+        sys.stdout.flush()
         import traceback
         traceback.print_exc()
 
-    print("✓ Server startup complete")
+    print("✓ Server startup complete", flush=True)
+    sys.stdout.flush()
     yield
     # Shutdown: Cleanup if needed
-    print("Shutting down server...")
+    print("Shutting down server...", flush=True)
 
 
 # Create FastAPI application
