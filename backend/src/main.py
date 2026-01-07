@@ -17,9 +17,12 @@ from src.middleware import rate_limiter
 async def lifespan(app: FastAPI):
     """Application lifespan events."""
     import sys
+    import os
 
     # Startup: Initialize database tables
     print(f"Starting TaskFlow API in {settings.environment} mode", flush=True)
+    sys.stdout.flush()
+    print(f"PORT environment variable: {os.environ.get('PORT', 'NOT SET')}", flush=True)
     sys.stdout.flush()
     print(f"Database URL: {settings.database_url[:50]}...", flush=True)
     sys.stdout.flush()
