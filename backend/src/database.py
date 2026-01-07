@@ -14,8 +14,12 @@ from src.config import settings
 # Transform connection string for asyncpg if needed
 # Strip whitespace and newlines that may have been copied from Railway
 database_url = settings.database_url.strip()
+print(f"[DATABASE] Original database_url from settings: {database_url[:60]}...", flush=True)
 if database_url.startswith("postgresql://"):
     database_url = database_url.replace("postgresql://", "postgresql+asyncpg://", 1)
+    print(f"[DATABASE] Transformed to asyncpg: {database_url[:60]}...", flush=True)
+elif "sqlite" in database_url.lower():
+    print("[DATABASE] WARNING: Using SQLite (development mode)", flush=True)
 
 # Determine if we should use connection pooling
 # In production (Neon), use optimized pool settings
