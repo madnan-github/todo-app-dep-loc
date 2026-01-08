@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     environment: str = "development"
 
     # CORS - Vercel production domains only
-    cors_origins: str = "http://localhost:3000"
+    cors_origins: str = "http://localhost:3000,https://web-taskflow.vercel.app"
 
     # Logging
     log_level: str = "INFO"
