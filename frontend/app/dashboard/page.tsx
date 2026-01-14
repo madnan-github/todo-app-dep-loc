@@ -13,6 +13,7 @@ import { TaskFilter } from "@/components/tasks/task-filter";
 import { TaskSort } from "@/components/tasks/task-sort";
 import { TaskForm } from "@/components/tasks/task-form";
 import { TaskItem } from "@/components/tasks/task-item";
+import { TaskEditModal } from "@/components/tasks/task-edit-modal";
 import type { Task } from "@/types";
 
 export default function DashboardPage() {
@@ -252,6 +253,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-
-// Import TaskEditModal at the bottom to avoid circular dependency
-import { TaskEditModal } from "@/components/tasks/task-edit-modal";

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
-import ChatKitWrapper from "@/components/ChatKitWrapper";
 
 export default function Home() {
   const { isAuthenticated, isLoading } = useAuth();

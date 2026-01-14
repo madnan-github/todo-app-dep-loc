@@ -8,7 +8,11 @@ interface Message {
   timestamp: Date;
 }
 
-const ChatKitWrapper: React.FC = () => {
+interface ChatKitWrapperProps {
+  onTaskChange?: () => void; // Callback to notify when tasks are modified via AI
+}
+
+const ChatKitWrapper: React.FC<ChatKitWrapperProps> = ({ onTaskChange }) => {
   const { user, isAuthenticated, isLoading: authLoading } = useAuth();
   const [inputValue, setInputValue] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -84,7 +88,9 @@ const ChatKitWrapper: React.FC = () => {
         throw new Error('User not authenticated');
       }
 
-      const response = await fetch(`/api/${user.id}/chat`, {
+      const BACKEND_API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
+      const response = await fetch(`${BACKEND_API_URL}/api/${user.id}/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,6 +110,23 @@ const ChatKitWrapper: React.FC = () => {
       // Update conversation ID if it's the first message
       if (!conversationId && data.conversation_id) {
         setConversationId(data.conversation_id);
+      }
+
+      // Check if any tool calls were made that modify tasks
+      // The backend returns tool_calls array indicating which operations were performed
+      const toolCalls = data.tool_calls || [];
+      const hasTaskModifyingCall = toolCalls.some((call: any) =>
+        call.tool_name === 'add_task' ||
+        call.tool_name === 'complete_task' ||
+        call.tool_name === 'delete_task' ||
+        call.tool_name === 'update_task'
+      );
+
+      if (hasTaskModifyingCall && onTaskChange) {
+        // Trigger a refresh of the task list after a short delay to allow the DB to update
+        setTimeout(() => {
+          onTaskChange();
+        }, 500);
       }
 
       // Add AI response to the chat
